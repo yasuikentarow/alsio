@@ -13,6 +13,16 @@
 		269DAE8724105FF3009F7860 /* Scope.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 269DAE8324105FF3009F7860 /* Scope.hpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		269DAE8C24106749009F7860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 269DAE8824106748009F7860 /* lilyan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2677672823FC292700C3CC71;
+			remoteInfo = lilyan;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		269DAE6D24104E53009F7860 /* libalsio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libalsio.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		269DAE7E24104E8D009F7860 /* Grammer.ll */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm.llvm; path = Grammer.ll; sourceTree = "<group>"; };
@@ -20,6 +30,7 @@
 		269DAE8124105FF3009F7860 /* Compiler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Compiler.hpp; sourceTree = "<group>"; };
 		269DAE8224105FF3009F7860 /* Scope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scope.cpp; sourceTree = "<group>"; };
 		269DAE8324105FF3009F7860 /* Scope.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scope.hpp; sourceTree = "<group>"; };
+		269DAE8824106748009F7860 /* lilyan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = lilyan.xcodeproj; path = ../../../lilyan/build/xcode/lilyan/lilyan.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				269DAE7B24104E8D009F7860 /* alsio */,
+				269DAE8824106748009F7860 /* lilyan.xcodeproj */,
 				269DAE6E24104E53009F7860 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,8 +64,8 @@
 		269DAE7B24104E8D009F7860 /* alsio */ = {
 			isa = PBXGroup;
 			children = (
-				269DAE7C24104E8D009F7860 /* vm */,
 				269DAE7D24104E8D009F7860 /* compiler */,
+				269DAE7C24104E8D009F7860 /* vm */,
 			);
 			name = alsio;
 			path = ../../../alsio;
@@ -76,6 +88,14 @@
 				269DAE8324105FF3009F7860 /* Scope.hpp */,
 			);
 			path = compiler;
+			sourceTree = "<group>";
+		};
+		269DAE8924106748009F7860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				269DAE8D24106749009F7860 /* lilyan */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,12 +155,28 @@
 			mainGroup = 269DAE6424104E53009F7860;
 			productRefGroup = 269DAE6E24104E53009F7860 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 269DAE8924106748009F7860 /* Products */;
+					ProjectRef = 269DAE8824106748009F7860 /* lilyan.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				269DAE6C24104E53009F7860 /* alsio */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		269DAE8D24106749009F7860 /* lilyan */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = lilyan;
+			remoteRef = 269DAE8C24106749009F7860 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		269DAE6A24104E53009F7860 /* Sources */ = {
